@@ -6,23 +6,23 @@ body {
     
 }
 .rest {
-    margin-top: -100px;
+    margin-top: -4vw;
 }
 .bg-img {
     display: flex;
-    min-height: 800px;
+    min-height: 1100px;
     top: 0;
 }
 
 .random-content {
-    margin-left: 4%;
+    margin-left: 4vw;
     max-width: 600px;
 }
 .random-content h3 {
     color: white;
     font-size: 2.5vw;
     width: 900px;
-    margin-top: 300px;
+    margin-top: 16vw;
     display: flex;
 }
 .random-content p {
@@ -130,7 +130,7 @@ body {
 
 
 .movies-container {
-    margin-left: 80px;
+    margin-left: 9vh;
 }
 
 .comedy-movies-container h3 {
@@ -142,8 +142,8 @@ body {
 }
 
 .comedy-movies-container {
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 9vh;
+    margin-top: 4.5vh;
 }
 
 .movies-container h3 {
@@ -155,8 +155,8 @@ body {
 }
 
 .horror-movies-container {
-    margin-left: 80px;
-    margin-top: 40px;
+    margin-left: 9vh;
+    margin-top: 4.5vh;
 }
 
 
@@ -216,12 +216,10 @@ footer {
 footer nav  {
     width: 1100px;
     align-content: center;
-    margin-left: 5%;
+    margin-left: 1%;
     padding-bottom: 50px;
 
-    
 }
-
 
 footer nav div {
     padding-left: 3vw;
@@ -239,7 +237,7 @@ footer nav a {
     text-decoration: none;
     padding: 0px 0px 0px 3vw;
     display: inline-flex;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     text-align: center;
     width: 190px;
     height: 30px;
@@ -248,19 +246,142 @@ footer nav a {
 }
 
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
     .bg-img {
         min-height: 600px;
     }
     .random-content {
-        margin-left: 2%;
+        margin-left: 5vh;
         max-width: 400px;
-    
+        margin-top: 60px;
     }
-  }
+    .rest {
+        margin-top: -5vw;
+        margin-left: -3vw;
+    }
+    footer nav {
+        margin-left: 20%;
+    }
+    .top-nav .navbar-right{
+        margin-left: 88%;
 
-  @media screen and (max-width: 1000px) {
+  } */
+
+  /* 0 */
+
+  @media screen and (max-width: 2200px){
+    .random-content {
+        margin-top: 140px;
+    }
+
+    }
+
+/* 1 */
+
+ @media screen and (max-width: 1800px){
     .bg-img {
-        min-height: 500px;
+      min-height: 1000px;
+    }
+    .random-content {
+        margin-left: 5vh;
+        max-width: 400px;
+        margin-top: 170px;
+}
+    .rest {
+        margin-top: -6%;
+        margin-left: -3%;
+    }
+} 
+
+/*  2 */
+
+@media screen and (max-width: 1400px){
+    .bg-img {
+      min-height: 800px;
+    }
+    .random-content {
+        margin-left: 5vh;
+        max-width: 400px;
+        margin-top: 170px;
+}
+    .rest {
+        margin-top: -6%;
+        margin-left: -3%;
+    }
+
+   @media screen and (max-width: 1024px) {
+    .bg-img {
+        min-height: 600px;
+    }
+    .rest {
+        margin-top: -11vw;
+        margin-left: -3.5vw;
+    }
+    .top-nav .navbar-right{
+        margin-left: 90%; 
+    }
+    .random-content{
+        margin-top: 100px;
+    }
+   }
+ 
+/* 3 */ 
+
+  @media screen and (max-width: 768px) {
+    .bg-img {
+        min-height: 50px;
+        display: flex;
+    }
+    .rest {
+        margin-top: -4vw;
+        margin-left: -3.5vw;
+    }
+    .random-content {
+        margin-left: 3vh;
+        max-width: 400px;
+        margin-top: 250px;
+    }
+    .top-nav .navbar-right{
+        margin-left: 95%;
+    }
+    .top-nav .navbar-left nav{
+        margin-left: 90px;
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .random-content p {
+        color: white;
+        max-width: 300px;
+        font-size: 1vw;
+    }
+    .random-content h3 {
+        color: white;
+        max-width: 200px;
+        font-size: 3vw;
+    }
+    .comedy-movies-container {
+       margin-left: 6vh;
+    margin-top: 4.5vh;
+    }
+    .movies-container {
+        margin-left: 6vh;
+     margin-top: 4.5vh;
+     }
+     .horror-movies-container {
+        margin-left: 6vh;
+     margin-top: 4.5vh;
+     }
+    .top-nav .navbar-left .logo {
+        min-width: 40px;
+    }
+    .top-nav .navbar-right .avatar{
+        height: 20px;
+    }
+    .top-nav .navbar-right .search{
+        height: 10px;
+        margin-left: 10px;
+        display: none;
     }
   }
