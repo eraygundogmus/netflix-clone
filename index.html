@@ -2,34 +2,34 @@
   <head>
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="./assets/netflix.png" />
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   </head>
 
 <body> 
-<header> 
-    <img class="logo" src="./assets/logo.png" style='max-width: 6%;min-width:70px;' />
+<div class="top-nav"> 
+    <div class="navbar-left">
+    <img class="logo" src="./assets/logo.png"/>
     <nav>
         <a class="main-navbar-item" href="#">Ana Sayfa</a>
         <a href="#">Diziler</a>
         <a href="#">Filmler</a>
         <a href="#">Yeni ve Popüler</a>
     </nav>
+</div>
     <div class="navbar-right">
-        <img class="search" src="./assets/search-icon.svg" style='max-width: 6%;min-width:70px;' />
-        <img class="avatar" src="./assets/avatar.png" style='max-width: 6%;min-width:70px;' />
+        <img class="search" src="./assets/search-icon.svg"/>
+        <img class="avatar" src="./assets/avatar.png"/>
     </div>
-</header>
-
-    <div id="trend-movie"> trend </div>
-
-
-
-
-    <div id="movies-container"> Netflixte Popüler</div>
+  
+</div>
+    <div id="trend-movie" class="trend-movie"></div>
+    <div id="movies-container" class="movies-container"> <h3>Popüler</h3> </div>
 
 
-    <div id="horror-movies-container"> Korku Temalı Filmler</div>
+    <div id="horror-movies-container" class="horror-movies-container"> <h3>Korku Temalı Filmler</h3></div>
 
 
 <footer>

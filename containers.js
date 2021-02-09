@@ -1,7 +1,6 @@
-
 function movieSection(movies) {
     return movies.map((movie) => {
-        return `<img src=${IMG_URL + movie.poster_path} movie-id=${movie.id}/>`;
+        return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}/>`;
     })
 }
 
@@ -19,26 +18,19 @@ function createMovieContainer(movies) {
     return movieItem;
 }
 
-{/* <div class="content">
-<p id="content-info> Xasda </p>
-</div>
- */}
+
 function createFilteredMovieContainer(movies,myData) {
     const movieItem2 = document.createElement('div');
-    movieItem2.setAttribute('class', 'movie');
+    movieItem2.setAttribute('class', 'filtered-movie');
     const generate = Math.floor(Math.random() * 20)
     const random = myData.results[generate]
+    const url = IMG_URL + random.backdrop_path
+    console.log(url)
+    const deneme = `${url}`    
     const movieTemp2 = `
-    <section class="section">
-        <img src=${IMG_URL + random.poster_path} movie-id=${random.id}/>
-    </section>
- 
-    `;
+        <div class="bg-img" style="background-size: cover; background-image: url(${deneme});"/>
+    ;`
     movieItem2.innerHTML = movieTemp2;
+    console.log(myData.results[generate])
     return movieItem2;
 }
-
-{/* <div class="content">
-<p id="content-info> X </p>
-</div>    
- */}
