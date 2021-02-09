@@ -25,11 +25,19 @@ function createFilteredMovieContainer(movies,myData) {
     const generate = Math.floor(Math.random() * 20)
     const random = myData.results[generate]
     const url = IMG_URL + random.backdrop_path
-    console.log(url)
+    const rndm = random.overview
+    const strShorter = function truncate(rndm, n){
+        return rndm?.length > n ? rndm.substr(0, n-1) + "..." : rndm;
+    }
     const deneme = `${url}`    
     const movieTemp2 = `
-        <div class="bg-img" style="background-size: cover; background-image: url(${deneme});"/>
-    ;`
+        <div class="bg-img" style="background-size: cover; background-image: linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(20,20,20,0.9) 85%), url(${deneme});"/>
+        <div class="random-content">
+        <h3 class="random-title"> ${random.title}</h3>
+        <p class="random-info">${strShorter(rndm,400)}</p>
+        <div class="random-buttons"><button class="random-button-1">Oynat</button><button class="random-button-2">Daha Fazla Bilgi</button>
+        </div>
+        </div>`
     movieItem2.innerHTML = movieTemp2;
     console.log(myData.results[generate])
     return movieItem2;

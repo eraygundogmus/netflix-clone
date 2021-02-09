@@ -1,59 +1,150 @@
+
 body {
     margin: 0;
-}
-
-.bg-img {
-    height: 600px
-}
-
-
-.filtered-movie img {
-    max-width: 80%;
-    height: auto;
-    object-fit: contain;
-    size: cover;
+    font-family: 'Netflix Sans Icon','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: rgb(20, 20, 20);
     
 }
-
-.top-nav nav {
-    display: flex;
-    position: fixed;
-    padding: 10px 20px;
+.rest {
+    margin-top: -100px;
 }
-.top-nav  .logo {
+.bg-img {
+    display: flex;
+    min-height: 800px;
+    top: 0;
+}
+
+.random-content {
+    margin-left: 3%;
+    max-width: 600px;
+}
+.random-content h3 {
+    color: white;
+    font-size: 2.5vw;
+    width: 900px;
+    margin-top: 300px;
+    display: block;
+}
+.random-content p {
+    color: white;
+    max-width: 900px;
+    font-size: 1vw;
+}
+
+.random-content .random-buttons .random-button-1 {
+    margin-bottom: 10%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    background-color: rgba(51,51,51, 0.5);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.2vw;
+}
+.random-content .random-buttons .random-button-2 {
+    margin-bottom: 10%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    background-color: rgba(51,51,51, 0.5);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 1vw;
+    border-radius: 0.2vw;
+}
+.navbar {
+/*     background-color: #111; */
     position: fixed;
-    margin-left: 1%;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    height: 65px;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-nav .navbar-left .logo {
+    position: fixed;
+    margin-left: 3%;
     display: flex;
     max-width: 6%;
-    min-width:90px;
+    min-width: 70px;
 }
 
-.navbar-right {
-    position: fixed;
-    margin-left: 86%;
+.top-nav .navbar-left {
     display: flex;
+    max-height: 30px;
+}
+
+.top-nav .navbar-left nav {
+    position: fixed;
+    margin-left: 10%;
+    margin-top: 1.3%;
+}
+.top-nav .navbar-left nav .main-navbar-item {
+    font-weight: 700;
+}
+
+
+.top-nav .navbar-left nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    color: white;
+    display: inline-block;
+    font-size: 0.7333333333333334vw;
+}
+.top-nav .navbar-left nav a:visited {
+    text-decoration: none;
+}
+
+
+.top-nav .navbar-right {
+    position: fixed;
+    margin-left: 91%;
+    display: flex;
+    margin-top: 1%;
 
     
 }
-.navbar-right .avatar {
+.top-nav .navbar-right .avatar {
     border-radius: 20%;
     display: flex;
 }
 
-.navbar-right .search {
+.top-nav .navbar-right .search {
     width: 100%;
-    height: 30px;
+    height: 20px;
     display: flex;
-    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 7px;
 }
 
 
 .movies-container {
-    margin-left: 15px;
+    margin-left: 50px;
+}
+
+.movies-container h3 {
+    color: white;
+    font-size: 1.3vw;
+
 }
 
 .horror-movies-container {
-    margin-left: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.horror-movies-container h3{
+    color: white;
+    font-size: 1.3vw;
 }
 
 .trend-movie h3{
@@ -74,12 +165,32 @@ section::-webkit-scrollbar {
 section img {
     object-fit: contain;
     width: 100%;
-    max-height: 300px;
+    max-height: 180px;
     margin-right: 10px;
     transition: transform 400ms;
+    border-radius: 1%;
 }
 
 section img:hover {
     transform: scale(1.07);
     opacity: 1;
 }
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 1300px) {
+    .bg-img {
+        min-height: 600px;
+    }
+    .random-content {
+        margin-left: 2%;
+        max-width: 400px;
+    
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .bg-img {
+        min-height: 500px;
+    }
+  }
