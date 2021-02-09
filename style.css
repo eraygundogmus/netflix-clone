@@ -15,7 +15,7 @@ body {
 }
 
 .random-content {
-    margin-left: 3%;
+    margin-left: 4%;
     max-width: 600px;
 }
 .random-content h3 {
@@ -23,7 +23,7 @@ body {
     font-size: 2.5vw;
     width: 900px;
     margin-top: 300px;
-    display: block;
+    display: flex;
 }
 .random-content p {
     color: white;
@@ -127,17 +127,31 @@ body {
 
 
 .movies-container {
-    margin-left: 50px;
+    margin-left: 80px;
+}
+
+.comedy-movies-container h3 {
+    color: white;
+    font-size: 1.3vw;
+    margin-bottom: -0.01px;
+    padding-bottom: 0.5vw;
+
+}
+
+.comedy-movies-container {
+    margin-left: 80px;
 }
 
 .movies-container h3 {
     color: white;
     font-size: 1.3vw;
+    margin-bottom: -0.01px;
+    padding-bottom: 0.5vw;
 
 }
 
 .horror-movies-container {
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 50px;
 }
 
@@ -145,12 +159,9 @@ body {
 .horror-movies-container h3{
     color: white;
     font-size: 1.3vw;
+    margin-bottom: -0.01px;
+    padding-bottom: 1vw;
 }
-
-.trend-movie h3{
-    margin-left: 15px
-}
-
 
 section {
     display: flex;
@@ -165,7 +176,7 @@ section::-webkit-scrollbar {
 section img {
     object-fit: contain;
     width: 100%;
-    max-height: 180px;
+    max-height: 8vw;
     margin-right: 10px;
     transition: transform 400ms;
     border-radius: 1%;
@@ -176,6 +187,19 @@ section img:hover {
     opacity: 1;
 }
 
+.section2 img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 18vw;
+    margin-right: 10px;
+    transition: transform 400ms;
+    border-radius: 1%;
+}
+
+.section2 img:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 1300px) {

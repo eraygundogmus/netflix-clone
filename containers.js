@@ -1,5 +1,8 @@
 function movieSection(movies) {
     return movies.map((movie) => {
+        if (movie.backdrop_path == null){
+            console.log('null') 
+        } else
         return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}/>`;
     })
 }
@@ -16,6 +19,30 @@ function createMovieContainer(movies) {
 
     movieItem.innerHTML = movieTemp;
     return movieItem;
+}
+
+
+function createMovieContainer2(movies) {
+    const movieItem = document.createElement('div');
+    movieItem.setAttribute('class', 'movie');
+    
+    const movieTemp = `
+    <section class="section2">
+        ${movieSection2(movies)}
+    </section>    
+    `;
+
+    movieItem.innerHTML = movieTemp;
+    return movieItem;
+}
+
+function movieSection2(movies) {
+    return movies.map((movie) => {
+        if (movie.poster_path == null){
+            console.log('null') 
+        } else
+        return `<img src=${IMG_URL + movie.poster_path} movie-id=${movie.id}/>`;
+    })
 }
 
 
@@ -39,6 +66,5 @@ function createFilteredMovieContainer(movies,myData) {
         </div>
         </div>`
     movieItem2.innerHTML = movieTemp2;
-    console.log(myData.results[generate])
     return movieItem2;
 }

@@ -6,8 +6,13 @@
 const movieList = document.querySelector('#movies-container')
 const trendMovie = document.querySelector('#trend-movie')
 const horrorMovieList = document.querySelector('#horror-movies-container')
+const comedyMovieList = document.querySelector('#comedy-movies-container')
+const actionMovieList = document.querySelector('#action-movies-container')
+const documentaryMovieList = document.querySelector('#documentary-movies-container')
+const dramaMovieList = document.querySelector('#drama-movies-container')
+const originalMovieList = document.querySelector('#original-movies-container')
 
-
+discoverAction
 
 const new2 = (event) => {
     
@@ -28,7 +33,57 @@ const new3 = (event) => {
                 const movieBlock = createMovieContainer(movies);
                 horrorMovieList.appendChild(movieBlock);
      })}
+
+const new4 = (event) => {
     
+    fetch(discoverComedy)
+         .then((req) => req.json())
+         .then((abc) => {
+                const movies = abc.results;
+                const movieBlock = createMovieContainer(movies);
+               comedyMovieList.appendChild(movieBlock);
+        })}
+    
+    
+    const new5 = (event) => {
+    
+    fetch(discoverAction)
+         .then((req) => req.json())
+         .then((abc) => {
+                const movies = abc.results;
+                const movieBlock = createMovieContainer(movies);
+               actionMovieList.appendChild(movieBlock);
+        })}
+
+        const new6 = (event) => {
+    
+            fetch(discoverDocumentary)
+                 .then((req) => req.json())
+                 .then((abc) => {
+                        const movies = abc.results;
+                        const movieBlock = createMovieContainer(movies);
+                        documentaryMovieList.appendChild(movieBlock);
+                })}
+
+                const new7 = (event) => {
+    
+                    fetch(discoverDrama)
+                         .then((req) => req.json())
+                         .then((abc) => {
+                                const movies = abc.results;
+                                const movieBlock = createMovieContainer(movies);
+                                dramaMovieList.appendChild(movieBlock);
+                        })}
+                        const new8 = (event) => {
+    
+                            fetch(discoverOriginals)
+                                 .then((req) => req.json())
+                                 .then((abc) => {
+                                        const movies = abc.results;
+                                        const movieBlock = createMovieContainer2(movies);
+                                        originalMovieList.appendChild(movieBlock);
+                                })}
+        
 
 
 window.onload = function (event) {
@@ -40,7 +95,7 @@ window.onload = function (event) {
               const myData = data
               const movieBlock2 = createFilteredMovieContainer(movies, myData);
               trendMovie.appendChild(movieBlock2);
-    }).then(new2(event)).then(new3(event))
+    }).then(new2(event)).then(new3(event)).then(new4(event)).then(new5(event)).then(new6(event)).then(new7(event)).then(new8(event))
     
 
 }
