@@ -3,9 +3,10 @@ function movieSection(movies) {
         if (movie.backdrop_path == null){
             console.log('null') 
         } else
-        return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}/>`;
+        return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}>`;
     })
 }
+
 
 function createMovieContainer(movies) {
     const movieItem = document.createElement('div');
@@ -14,7 +15,7 @@ function createMovieContainer(movies) {
     const movieTemp = `
     <section class="section">
         ${movieSection(movies)}
-    </section>    
+    </section><div class="content"> <p id="content-close"> X <p></div>
     `;
 
     movieItem.innerHTML = movieTemp;
@@ -29,7 +30,7 @@ function createMovieContainer2(movies) {
     const movieTemp = `
     <section class="section2">
         ${movieSection2(movies)}
-    </section>    
+    </section><div class="content"> <p id="content-close"> X <p></div>
     `;
 
     movieItem.innerHTML = movieTemp;
@@ -41,7 +42,7 @@ function movieSection2(movies) {
         if (movie.poster_path == null){
             console.log('null') 
         } else
-        return `<img src=${IMG_URL + movie.poster_path} movie-id=${movie.id}/>`;
+        return `<img src=${IMG_URL + movie.poster_path} movie-id=${movie.id}>`;
     })
 }
 

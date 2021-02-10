@@ -12,7 +12,7 @@ const documentaryMovieList = document.querySelector('#documentary-movies-contain
 const dramaMovieList = document.querySelector('#drama-movies-container')
 const originalMovieList = document.querySelector('#original-movies-container')
 
-discoverAction
+
 
 const new2 = (event) => {
     
@@ -120,3 +120,63 @@ const observer = new IntersectionObserver(function
 }, options);
 
 observer.observe(sectionOne);
+
+
+function generateUrl(path) {
+    const url = `https://api.themoviedb.org/3${path}?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b`
+    return url
+}
+
+function createIframe (video) {
+    const iframe = document.createElement('iframe')
+    iframe.src = `https://www.youtube.com/embed/${video.key}`
+    iframe.width = 360;
+    iframe.height = 315;
+    iframe.allowFullscreen = false;
+
+    return iframe;
+}
+
+function createVideoTemplate (data,content) {
+    //todo
+                // display movie videos
+                content.innerHTML = '<div id="content-close">x</div>';
+                const videos = data.results;
+                const length = videos.length > 1 ? 1 : 1;
+                const iframeContainer = document.createElement('div');
+                
+
+                for (let i=0; i < length; i++){
+                    const video = videos[i]
+                    const iframe = createIframe(video);
+                    iframeContainer.className = "iframe-div"
+                    iframeContainer.appendChild(iframe);
+                    content.appendChild(iframeContainer)
+                }
+}
+const imgElement = document.querySelector('img');
+
+document.onclick = function() {
+    const target = event.target;
+
+    if (target.tagName.toLowerCase() === 'img'){
+        const movieId = target.attributes[1].value;
+        const section = event.target.parentElement;
+        const content = section.nextElementSibling;
+        content.classList.add('content-display')
+
+        const path = `/movie/${movieId}/videos`;
+        const url = generateUrl(path);
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => createVideoTemplate(data, content))                 
+        .catch((error) => {
+            console.log(error)
+        });
+}
+
+    if (target.id === 'content-close'){
+        const content = target.parentElement;
+        content.classList.remove('content-display');
+    }
+}
