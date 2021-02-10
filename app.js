@@ -99,3 +99,24 @@ window.onload = function (event) {
     
 
 }
+
+
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".trend-movie");
+
+const options = {
+    rootMargin: "-700px 0px 0px 0px"
+};
+
+const observer = new IntersectionObserver(function
+(entries, observer){
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            header.classList.add("nav-scrolled");
+        } else {
+            header.classList.remove("nav-scrolled")
+        }
+    });
+}, options);
+
+observer.observe(sectionOne);

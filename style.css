@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    font-family: 'Netflix Sans Icon','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: rgb(20, 20, 20);
     
 }
@@ -24,6 +24,7 @@ body {
     width: 900px;
     margin-top: 16vw;
     display: flex;
+    font-weight: 700;
 }
 .random-content p {
     color: white;
@@ -36,7 +37,7 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
-    font-weight: 700;
+    font-weight: normal;
     background-color: rgba(51,51,51, 0.5);
     padding: 0.5rem 2rem 0.5rem 2rem;
     color: white;
@@ -48,7 +49,7 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
-    font-weight: 700;
+    font-weight: normal;
     background-color: rgba(51,51,51, 0.5);
     padding: 0.5rem 2rem 0.5rem 2rem;
     color: white;
@@ -57,8 +58,8 @@ body {
     font-size: 1vw;
     border-radius: 0.2vw;
 }
+
 .navbar {
-/*     background-color: #111; */
     position: fixed;
     display: flex;
     top: 0;
@@ -66,6 +67,19 @@ body {
     height: 65px;
     width: 100%;
     z-index: 1;
+}
+header {
+    --background: transparent;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background 550ms ease-in;
+
+}
+.nav-scrolled {
+    background: #111;
 }
 
 .top-nav .navbar-left .logo {
@@ -165,6 +179,7 @@ body {
     font-size: 1.3vw;
     margin-bottom: -0.01px;
     padding-bottom: 1vw;
+
 }
 
 section {
@@ -376,12 +391,11 @@ footer nav a {
     .top-nav .navbar-left .logo {
         min-width: 40px;
     }
-    .top-nav .navbar-right .avatar{
+    .top-nav .navbar-right .avatar {
         height: 20px;
     }
-    .top-nav .navbar-right .search{
+    .top-nav .navbar-right .search {
         height: 10px;
         margin-left: 10px;
-        display: none;
-    }
-  }
+        display: none; 
+    }}}
