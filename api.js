@@ -1,0 +1,13 @@
+const endpoint = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=vote_count.desc&include_adult=false&include_video=true&page=1'
+const IMG_URL = 'https://image.tmdb.org/t/p/w1280/' 
+const trending_URL = 'https://api.themoviedb.org/3/trending/movie/week?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b'
+const discoverAction = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28'
+const discoverAnimated = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=16'
+const discoverDrama = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=18'
+const discoverHistory = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=36'
+const discoverComedy = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35'
+const discoverDocumentary = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=99'
+const discoverHorror = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=27'
+const discoverOriginals = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=9648'
+
+const youtube = 'https://www.youtube.com/watch?v=' 

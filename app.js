@@ -69,8 +69,8 @@ const new4 = (event) => {
     
                     fetch(discoverDrama)
                          .then((req) => req.json())
-                         .then((abc) => {
-                                const movies = abc.results;
+                         .then((abc) => {                              
+                                  const movies = abc.results;
                                 const movieBlock = createMovieContainer(movies);
                                 dramaMovieList.appendChild(movieBlock);
                         })}
@@ -128,33 +128,38 @@ function generateUrl(path) {
 }
 
 function createIframe (video) {
+    const div = document.createElement('div')
     const iframe = document.createElement('iframe')
-    iframe.src = `https://www.youtube.com/embed/${video.key}`
-    iframe.width = 360;
-    iframe.height = 315;
+    iframe.src = `https://www.youtube.com/embed/${video.key}?autoplay=1&controls=0&rel=0&showinfo=1&mute=1`
+    iframe.width = 720;
+    iframe.height = 600;
     iframe.allowFullscreen = false;
-
     return iframe;
 }
 
 function createVideoTemplate (data,content) {
     //todo
                 // display movie videos
-                content.innerHTML = '<div id="content-close">x</div>';
+                const title = data.results[0].name
+                content.innerHTML = `<div id="content-close"></div><button class="close-button">Close</button>`;
                 const videos = data.results;
                 const length = videos.length > 1 ? 1 : 1;
                 const iframeContainer = document.createElement('div');
-                
-
                 for (let i=0; i < length; i++){
                     const video = videos[i]
                     const iframe = createIframe(video);
                     iframeContainer.className = "iframe-div"
                     iframeContainer.appendChild(iframe);
                     content.appendChild(iframeContainer)
+                    
+                    
                 }
 }
+
+
 const imgElement = document.querySelector('img');
+
+
 
 document.onclick = function() {
     const target = event.target;
@@ -180,3 +185,4 @@ document.onclick = function() {
         content.classList.remove('content-display');
     }
 }
+

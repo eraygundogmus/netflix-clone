@@ -1,21 +1,21 @@
+const strShorter2 = function truncate(ID, n){
+    return ID?.length > n ? ID.substr(0, n-1) + "..." : ID;
+}
+
 function movieSection(movies) {
-    return movies.map((movie) => {
+        return movies.map((movie) => {
         if (movie.backdrop_path == null){
             console.log('null') 
         } else
-        return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}>`;
-    })
+        return `<img src=${IMG_URL + movie.backdrop_path} movie-id=${movie.id}><p class="movie-info" style="display: none;">${strShorter2(movie.overview,20)}</p>`})
 }
 
 
 function createMovieContainer(movies) {
     const movieItem = document.createElement('div');
     movieItem.setAttribute('class', 'movie');
-    
-    const movieTemp = `
-    <section class="section">
-        ${movieSection(movies)}
-    </section><div class="content"> <p id="content-close"> X <p></div>
+    const movieTemp = `<section class="section">${movieSection(movies)}<div class="movie-info"><div>
+    </section><div class="content"><p id="content-close"><p></div>
     `;
 
     movieItem.innerHTML = movieTemp;
@@ -29,8 +29,8 @@ function createMovieContainer2(movies) {
     
     const movieTemp = `
     <section class="section2">
-        ${movieSection2(movies)}
-    </section><div class="content"> <p id="content-close"> X <p></div>
+        ${movieSection2(movies)} 
+    </section><div class="content"> <p id="content-close"><p></div>
     `;
 
     movieItem.innerHTML = movieTemp;

@@ -37,29 +37,44 @@ body {
 }
 
 .content-display {
-    display: flex;
+    display: block;
     position: fixed;
     height: 50px;
-    background: #444; 
-    left: 5%;
+    left: 4%;
     top: 20%;
 
 }
+.close-button {
+    margin-bottom: 1%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: normal;
+    background-color: rgba(51,51,51, 0.8);
+    padding: 1rem 3rem 1rem 3rem;
+    color: white;
+    font-size: 1vw;
+    border-radius: 0.2vw;
 
+}
+/* #movie-info {
+    font-size: 30px;
+    color: white;
+    display: block;
+    position: fixed;
+    background: #000;
+    height: 100px;
+    width: 720px;
+
+} */
 #content-close {
-    display: flex;
+    display: block;
     position: fixed;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
 
-}
-
-iframe div {
-    display: flex;
-    position: absolute;
-    
 }
 
 .random-content .random-buttons .random-button-1 {
@@ -222,7 +237,7 @@ section::-webkit-scrollbar {
     display: none;
 }
 
-section img {
+.movies-container section img {
     object-fit: contain;
     width: 100%;
     max-height: 8vw;
@@ -232,25 +247,71 @@ section img {
     cursor: pointer;
 }
 
-section img:hover {
-    transform: scale(1.07);
+.movies-container section img:hover {
     opacity: 1;
+    width: 100%;
+    max-height: 12vw;
+    transition: transform 400ms;
+    border-radius: 1%;
+    transform: scale(1.07);
 }
-
-.section2 img {
+.horror-movies-container section img {
     object-fit: contain;
     width: 100%;
-    max-height: 25vw;
+    max-height: 8vw;
     margin-right: 10px;
     transition: transform 400ms;
     border-radius: 1%;
     cursor: pointer;
 }
 
-.section2 img:hover {
-    transform: scale(1.07);
+.horror-movies-container section img:hover {
     opacity: 1;
+    width: 100%;
+    max-height: 12vw;
+    transition: transform 400ms;
+    border-radius: 1%;
+    transform: scale(1.07);
 }
+
+.comedy-movies-container section img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 8vw;
+    margin-right: 10px;
+    transition: transform 400ms;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+.comedy-movies-container section img:hover {
+    opacity: 1;
+    width: 100%;
+    max-height: 12vw;
+    transition: transform 400ms;
+    border-radius: 1%;
+    transform: scale(1.07);
+}
+
+.comedy-movies-container .section2 img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 18vw;
+    margin-right: 10px;
+    transition: transform 400ms;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+.comedy-movies-container .section2 img:hover {
+    opacity: 1;
+    width: 100%;
+    max-height: 24vw;
+    transition: transform 400ms;
+    border-radius: 1%;
+    transform: scale(1.07);
+}
+
 
 footer {
     margin-top: 140px;
