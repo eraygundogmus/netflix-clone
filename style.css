@@ -1,9 +1,7 @@
-
 body {
     margin: 0;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: rgb(20, 20, 20);
-    
 }
 .rest {
     margin-top: -4vw;
@@ -13,7 +11,6 @@ body {
     min-height: 1100px;
     top: 0;
 }
-
 .random-content {
     margin-left: 4vw;
     max-width: 600px;
@@ -31,18 +28,15 @@ body {
     max-width: 900px;
     font-size: 1vw;
 }
-
 .content {
     display: none;
 }
-
 .content-display {
     display: block;
     position: fixed;
     height: 50px;
     left: 4%;
     top: 20%;
-
 }
 .close-button {
     margin-bottom: 1%;
@@ -55,18 +49,7 @@ body {
     color: white;
     font-size: 1vw;
     border-radius: 0.2vw;
-
 }
-/* #movie-info {
-    font-size: 30px;
-    color: white;
-    display: block;
-    position: fixed;
-    background: #000;
-    height: 100px;
-    width: 720px;
-
-} */
 #content-close {
     display: block;
     position: fixed;
@@ -74,9 +57,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-
 }
-
 .random-content .random-buttons .random-button-1 {
     margin-bottom: 10%;
     cursor: pointer;
@@ -103,7 +84,6 @@ body {
     font-size: 1vw;
     border-radius: 0.2vw;
 }
-
 .navbar {
     position: fixed;
     display: flex;
@@ -121,12 +101,10 @@ header {
     left: 0;
     right: 0;
     transition: background 550ms ease-in;
-
 }
 .nav-scrolled {
     background: #111;
 }
-
 .top-nav .navbar-left .logo {
     position: fixed;
     margin-left: 3%;
@@ -135,12 +113,10 @@ header {
     min-width: 70px;
     cursor: pointer;
 }
-
 .top-nav .navbar-left {
     display: flex;
     max-height: 30px;
 }
-
 .top-nav .navbar-left nav {
     position: fixed;
     margin-left: 10%;
@@ -149,8 +125,6 @@ header {
 .top-nav .navbar-left nav .main-navbar-item {
     font-weight: 700;
 }
-
-
 .top-nav .navbar-left nav a {
     text-decoration: none;
     margin-left: 20px;
@@ -162,22 +136,17 @@ header {
 .top-nav .navbar-left nav a:visited {
     text-decoration: none;
 }
-
-
 .top-nav .navbar-right {
     position: fixed;
     margin-left: 91%;
     display: flex;
-    margin-top: 1%;
-
-    
+    margin-top: 1%;  
 }
 .top-nav .navbar-right .avatar {
     border-radius: 20%;
     display: flex;
     cursor: pointer;
 }
-
 .top-nav .navbar-right .search {
     width: 100%;
     height: 20px;
@@ -186,57 +155,43 @@ header {
     margin-top: 7px;
     cursor: pointer;
 }
-
-
 .movies-container {
     margin-left: 9vh;
 }
-
 .comedy-movies-container h3 {
     color: white;
     font-size: 1.3vw;
     margin-bottom: -0.01px;
     padding-bottom: 0.5vw;
-
 }
-
 .comedy-movies-container {
     margin-left: 9vh;
     margin-top: 4.5vh;
 }
-
 .movies-container h3 {
     color: white;
     font-size: 1.3vw;
     margin-bottom: -0.01px;
     padding-bottom: 0.5vw;
-
 }
-
 .horror-movies-container {
     margin-left: 9vh;
     margin-top: 4.5vh;
 }
-
-
 .horror-movies-container h3{
     color: white;
     font-size: 1.3vw;
     margin-bottom: -0.01px;
     padding-bottom: 1vw;
-
 }
-
 section {
     display: flex;
     overflow-y: scroll;
     overflow-x: scroll;
 }
-
 section::-webkit-scrollbar {
     display: none;
 }
-
 .movies-container section img {
     object-fit: contain;
     width: 100%;
@@ -246,7 +201,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     cursor: pointer;
 }
-
 .movies-container section img:hover {
     opacity: 1;
     width: 100%;
@@ -264,7 +218,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     cursor: pointer;
 }
-
 .horror-movies-container section img:hover {
     opacity: 1;
     width: 100%;
@@ -273,7 +226,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     transform: scale(1.07);
 }
-
 .comedy-movies-container section img {
     object-fit: contain;
     width: 100%;
@@ -283,7 +235,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     cursor: pointer;
 }
-
 .comedy-movies-container section img:hover {
     opacity: 1;
     width: 100%;
@@ -292,7 +243,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     transform: scale(1.07);
 }
-
 .comedy-movies-container .section2 img {
     object-fit: contain;
     width: 100%;
@@ -302,7 +252,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     cursor: pointer;
 }
-
 .comedy-movies-container .section2 img:hover {
     opacity: 1;
     width: 100%;
@@ -311,8 +260,6 @@ section::-webkit-scrollbar {
     border-radius: 1%;
     transform: scale(1.07);
 }
-
-
 footer {
     margin-top: 140px;
     display: flex;
@@ -326,7 +273,6 @@ footer nav  {
     padding-bottom: 50px;
 
 }
-
 footer nav div {
     padding-left: 3vw;
 }
@@ -335,9 +281,7 @@ footer nav img  {
     display: inline-flex;  
     padding-bottom: 20px;
     padding-right: 30px ;
- 
 }
-
 footer nav a {
     color: gray;
     text-decoration: none;
@@ -346,44 +290,14 @@ footer nav a {
     font-size: 0.7vw;
     text-align: center;
     width: 190px;
-    height: 30px;
-
-    
+    height: 30px; 
 }
-
-/* On screens that are 992px or less, set the background color to blue */
-/* @media screen and (max-width: 1300px) {
-    .bg-img {
-        min-height: 600px;
-    }
-    .random-content {
-        margin-left: 5vh;
-        max-width: 400px;
-        margin-top: 60px;
-    }
-    .rest {
-        margin-top: -5vw;
-        margin-left: -3vw;
-    }
-    footer nav {
-        margin-left: 20%;
-    }
-    .top-nav .navbar-right{
-        margin-left: 88%;
-
-  } */
-
   /* 0 */
-
   @media screen and (max-width: 2200px){
     .random-content {
         margin-top: 140px;
-    }
-
-    }
-
+    }}
 /* 1 */
-
  @media screen and (max-width: 1800px){
     .bg-img {
       min-height: 1000px;
@@ -392,18 +306,15 @@ footer nav a {
         margin-left: 5vh;
         max-width: 400px;
         margin-top: 170px;
-}
+    }
     .rest {
         margin-top: -6%;
         margin-left: -3%;
     }
     header {
         height: 60px
-    }
-} 
-
+    }} 
 /*  2 */
-
 @media screen and (max-width: 1400px){
     header {
         height: 50px
@@ -415,12 +326,11 @@ footer nav a {
         margin-left: 5vh;
         max-width: 400px;
         margin-top: 170px;
-}
+    }
     .rest {
         margin-top: -6%;
         margin-left: -3%;
     }
-
    @media screen and (max-width: 1024px) {
     .bg-img {
         min-height: 600px;
@@ -434,11 +344,8 @@ footer nav a {
     }
     .random-content{
         margin-top: 100px;
-    }
-   }
- 
+    }}
 /* 3 */ 
-
   @media screen and (max-width: 768px) {
     header {
         height: 30px
@@ -478,15 +385,15 @@ footer nav a {
     }
     .comedy-movies-container {
        margin-left: 6vh;
-    margin-top: 4.5vh;
+       margin-top: 4.5vh;
     }
     .movies-container {
         margin-left: 6vh;
-     margin-top: 4.5vh;
+        margin-top: 4.5vh;
      }
      .horror-movies-container {
         margin-left: 6vh;
-     margin-top: 4.5vh;
+        margin-top: 4.5vh;
      }
     .top-nav .navbar-left .logo {
         min-width: 50px;
