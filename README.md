@@ -6,7 +6,7 @@
 
 * [Online](https://6024440531b3403d8fba68bd--vibrant-williams-9aca87.netlify.app/)
 
-### Responsive for devices min 768 pixel width
+* Responsive for devices width 4k to 768 pixel
 
 ## Overview
 ![overview](https://github.com/eraygundogmus/netflix-clone/blob/main/assets/overview.gif)

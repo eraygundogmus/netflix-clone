@@ -9,5 +9,4 @@ const discoverComedy = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce
 const discoverDocumentary = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=99'
 const discoverHorror = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=27'
 const discoverOriginals = 'https://api.themoviedb.org/3/discover/movie?api_key=4bce0e6dd9c6ea1738fa02f130b33d2b&language=tr-TR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=9648'
-
 const youtube = 'https://www.youtube.com/watch?v=' 
